@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700i|Source+Sans+Pro&display=swap");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+  background-color: #56a9ad;
+  background-image: url("http://studioghiblimovies.com/wp-content/uploads/2016/04/46393_1_other_anime_studio_ghibli.jpg");
+  background-size: stretch;
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  color: #2a2223;
+  margin: 0;
+}
+h1 {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+}
+.logo_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(225, 225, 225, 0.5);
+}
+.logo {
+  width: 250px;
+}
+h2 {
+  color: #474747;
+  font-size: 25px;
+  background: #2eb29a;
+  margin: 0;
+  padding: 10px;
+}
+.film {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 20px auto;
+  max-width: 900px;
+}
+.film-list {
+  background: #bcc8c1;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+p {
+  padding: 10px;
+}
+p:nth-child(2) {
+  padding: 10px;
+  font-size: 18px;
+  display: block; /* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: no-wrap;
+  overflow: hidden;
+  max-height: 10em;
+  line-height: 1.2em;
+}
+@media (max-width: 580px) {
+  .film-list {
+    align-self: center;
+    justify-self: center;
+    font-size: 0.9rem;
+    margin: 1rem;
+    width: 300px;
+  }
+}
